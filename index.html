@@ -7,11 +7,16 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=5">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=5">
     <link rel="icon" href="./favicon.ico?v=5">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- `interactive-widget=resizes-content` (2026-09-16): on Chrome Android the
+         keyboard shrinks the layout viewport itself, so the player's bottom
+         chrome (`bottom:0` inside `h-screen`) stops above it in pure CSS —
+         Chrome's default (`resizes-visual`) left it under the keyboard. iOS
+         ignores the key and keeps its own model (see useVisualViewport). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
     <title>Arrowword</title>
     <link rel="preload" href="./fonts/InterTight/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/SpaceGrotesk/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <script type="module" crossorigin src="./assets/play-C1eR5qhb.js"></script>
+    <script type="module" crossorigin src="./assets/play-DJwLAwlX.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/play-Cv5CI9gy.css">
   </head>
   <body>
